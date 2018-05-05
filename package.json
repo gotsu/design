@@ -1,12 +1,13 @@
 {
   "name": "icons",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://gotsu.github.io/icons",
+  "private": false,
+  "homepage": "https://gotsu.github.io/icons/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-gotsu-icons": "^1.0.0",
     "react-scripts": "1.1.4"
   },
   "scripts": {
@@ -15,6 +16,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages-deploy build"
+    "deploy": "gh-pages -d build"
   }
 }
