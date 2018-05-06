@@ -1,63 +1,19 @@
 {
-  "name": "react-gotsu-icons",
-  "version": "1.0.0",
-  "description": "react vector icons",
+  "name": "icons",
+  "version": "0.1.0",
   "private": false,
-  "author": "zynkn <wls5563@gmail.com>",
-  "homepage": "https://github.com/gotsu/icons#readme",
-  "bugs": {
-    "url": "https://github.com/gotsu/icons/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gotsu/icons.git"
-  },
-  "keywords": [
-    "react",
-    "icons",
-    "svg",
-    "vector",
-    "gotsu",
-    "zynkn",
-    "icon",
-    "react icon",
-    "react-icon",
-    "react-svg",
-    "svg icon"
-  ],
-  "license": "WTFPL",
-  "files": [
-    "lib"
-  ],
-  "directories": {
-    "lib": "lib"
-  },
-  "main": "./lib/index.js",
-  "scripts": {
-    "build": "rm -rf ./lib && babel examples/src/lib --out-dir lib && yarn test",
-    "prepublish": "npm run build",
-    "test": "jest"
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
+  "homepage": "https://gotsu.github.io/icons/",
   "dependencies": {
-    "react": "^16.2.0"
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-gotsu-icons": "^1.0.0",
+    "react-scripts": "1.1.4"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-jest": "^22.4.3",
-    "babel-preset-env": "^1.6.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
-    "jest": "^21.0.0",
-    "chai": "^4.1.2",
-    "sinon": "^4.4.8"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   }
 }
