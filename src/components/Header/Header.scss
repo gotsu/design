@@ -1,1 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
 
+
+.Header{
+  position: absolute;
+  width: 100%;
+  height: 56px;
+  background-color: #20232a;
+  top: 0;
+
+  .title{
+    display: inline-block;
+    line-height: 56px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #61dafb;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  ul{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    color: white;
+    line-height: 56px;
+    padding: 0;
+    padding-left: 5rem;
+    li{
+      display: inline-block;
+      list-style: none;
+      a{
+        display: inline-block;
+        padding: 0 1rem;
+        line-height: 56px;
+        height: 56px;
+        font-weight: 600;
+        font-family: 'Nanum Myeongjo', serif;
+        &:hover{
+          color: #61dafb;
+        }
+         &.active{
+          border-bottom: 4px solid #61dafb;
+          color: #61dafb;
+          cursor: pointer;
+        }
+
+      }
+
+    }
+  }
+}
+.Header + section{
+  margin-top: 56px;
+}
