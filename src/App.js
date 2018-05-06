@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {IconBookmark} from 'react-gotsu-icons';
 import logo from './logo.svg';
 import './App.css';
+import { IconBookmark } from 'react-gotsu-icons';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-          <IconBookmark width="100px" fill="red" />
+          <IconBookmark width="40px" fill="red" />
         </p>
       </div>
     );
