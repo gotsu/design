@@ -4,10 +4,13 @@
   "private": false,
   "homepage": "https://gotsu.github.io/icons/",
   "dependencies": {
+    "classnames": "^2.2.5",
+    "node-sass": "^4.9.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-gotsu-icons": "^1.0.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "sass-loader": "^7.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
