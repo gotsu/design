@@ -11,10 +11,10 @@ const Header = () => (
     <NavLink className={cx('title')} to="/icons">React Gotsu Icons</NavLink>
     <ul>
       <li>
-        <NavLink to="/icons" activeClassName={cx('active')}>Icons</NavLink>
+        <NavLink exact to="/icons" activeClassName={cx('active')}>Icons</NavLink>
       </li>
       <li>
-        <NavLink activeClassName={cx('active')} to="/icons/docs">Docs</NavLink>
+        <NavLink activeClassName={cx('active')} exact to="/icons/docs">Docs</NavLink>
       </li>
       <li>
         <NavLink activeClassName={cx('active')} to="/icons/tutorial">Tutorial</NavLink>
