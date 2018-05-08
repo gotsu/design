@@ -12,3 +12,8 @@ Step 4. `yarn build`
 
 Step 5. `yarn deploy` or `gh-pages -d build`
 
+Step 6. `git add .`
+
+Step 7. `git commit -m 'messaage'`
+
+Step 8. `git push origin gh-pages-publish`

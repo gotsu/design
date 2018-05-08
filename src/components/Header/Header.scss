@@ -53,3 +53,11 @@
   margin-top: 56px;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .Header{
+    ul{
+      display: none;
+    }
+  }
+}
