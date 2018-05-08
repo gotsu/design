@@ -1,0 +1,30 @@
+
+.IconBox{
+  display: inline-block;
+  min-width: 160px;
+  padding: 1rem;
+  background-color: gray;
+  text-align: center;
+  animation: fadein 1s;
+  svg{
+    display: inline-block;
+  }
+  .name{
+    color: white;
+    font-size: 9pt;
+  }
+}
+.IconBox + .IconBox {
+  margin-left: 0.5rem;
+}
+
+@keyframes fadein{
+  0%{
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

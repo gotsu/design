@@ -6,8 +6,8 @@ const MainPage = () => {
     <div>
       <Header />
       <section>
-        <h2>
-          This place is developing..
+        <h2 style={{ padding: '2rem 0' }}>
+          We are developing this place...
         </h2>
       </section>
     </div>
