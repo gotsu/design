@@ -3,9 +3,10 @@
   display: inline-block;
   min-width: 160px;
   padding: 1rem;
-  background-color: gray;
+  background-color: #20232a;
   text-align: center;
   animation: fadein 1s;
+  margin: 0.25rem;
   svg{
     display: inline-block;
   }
@@ -14,9 +15,9 @@
     font-size: 9pt;
   }
 }
-.IconBox + .IconBox {
-  margin-left: 0.5rem;
-}
+// .IconBox + .IconBox {
+//   margin-left: 0.5rem;
+// }
 
 @keyframes fadein{
   0%{

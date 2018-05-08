@@ -38,7 +38,7 @@
     "react": "^16.3.2",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.3.2",
-    "react-gotsu-icons": "^1.0.2",
+    "react-gotsu-icons": "^1.0.3",
     "react-router-dom": "^4.2.2",
     "resolve": "1.6.0",
     "sass-loader": "^7.0.1",
