@@ -34,3 +34,12 @@ export { default as IconTwitter } from './IconTwitter'
 export { default as IconKakaoTalk } from './IconKakaoTalk'
 export { default as IconPicture } from './IconPicture'
 export { default as IconLink } from './IconLink'
+
+
+// https://github.com/diegohaz/arc/wiki/Atomic-Design#do-not-worry
+const req = require.context('.', true, /\.\/.\.js$/)
+
+req.keys().forEach((key) => {
+  const componentName = key.replace(/\.\/.\.js$/, '$1')
+  module.exports[componentName] = req(key).default
+})

@@ -5,19 +5,25 @@ import React, { Component } from 'react'
 //   , IconTrashcan, IconSiren, IconAngleLeft, IconAngleRight, IconAngleTop, IconAngleBottom, IconArrowLeft, IconArrowRight, IconArrowTop, IconArrowBottom, IconBookCheck
 //   , IconBookAdd, IconPaperP, IconAlignRight, IconAlignCenter, IconAlignLeft, IconInstagram, IconFacebook, IconTwitter, IconKakaoTalk, IconPicture, IconLink
 // } from '../../../lib'
-import {
-  IconBookmark, IconPencil, IconBookmark2, IconChat, IconHome, IconSearch, IconUser, IconShare, IconClock, IconCross, IconX, IconHamburger, IconMore, IconExport
-  , IconTrashcan, IconSiren, IconAngleLeft, IconAngleRight, IconAngleTop, IconAngleBottom, IconArrowLeft, IconArrowRight, IconArrowTop, IconArrowBottom, IconBookCheck
-  , IconBookAdd, IconPaperP, IconAlignRight, IconAlignCenter, IconAlignLeft, IconInstagram, IconFacebook, IconTwitter, IconKakaoTalk, IconPicture, IconLink
-} from 'react-gotsu-icons'
+// import {
+//   IconBookmark, IconPencil, IconBookmark2, IconChat, IconHome, IconSearch, IconUser, IconShare, IconClock, IconCross, IconX, IconHamburger, IconMore, IconExport
+//   , IconTrashcan, IconSiren, IconAngleLeft, IconAngleRight, IconAngleTop, IconAngleBottom, IconArrowLeft, IconArrowRight, IconArrowTop, IconArrowBottom, IconBookCheck
+//   , IconBookAdd, IconPaperP, IconAlignRight, IconAlignCenter, IconAlignLeft, IconInstagram, IconFacebook, IconTwitter, IconKakaoTalk, IconPicture, IconLink
+// } from 'react-gotsu-icons'
+import * as icons from '../../../lib';
 
 export default class MainPage extends Component {
 
 
   render() {
+    let str = [];
+    for (let item in icons) {
+      str.push(React.createElement(icons[item], null))
+    }
     return (
       <section>
-        <IconBookmark width="100px" />
+        {str}
+        {/* <IconBookmark width="100px" />
         <IconPencil width="50px" fill="red" />
         <IconBookmark2 width="50px" />
         <IconChat width="50px" />
@@ -52,7 +58,7 @@ export default class MainPage extends Component {
         <IconTwitter width="40px" />
         <IconKakaoTalk width="40px" />
         <IconPicture width="40px" />
-        <IconLink width="40px" />
+        <IconLink width="40px" /> */}
       </section>
     )
   }
